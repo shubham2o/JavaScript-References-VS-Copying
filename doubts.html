@@ -9,6 +9,42 @@
 </head>
 
 <body>
+    <!-- Object.assign() -->
+    <h1>Object.assign()</h1>
+    <p>• The Object.assign() method copies all enumerable own properties from one or more source objects to a target
+        object. It returns the modified target object.</p>
+    <p>• Among the Object constructor methods, there is a method Object.assign() which is used to copy the values and
+        properties from one or more source objects to a target objects. It invokes getters and setters since it uses
+        both [[Get]] on the source and [[Set]] on the target.</p>
+    <p>• It returns the target object which has properties and values copied from the target object. Object.assign()
+        does not throw on null or undefined source values.</p>
+    <p>• Object.assign() is used for cloning an object.</p>
+    <p>• Object.assign() is used to merge object with same properties.</p>
+
+    <!-- Syntax -->
+    • <u>Syntax</u> : <strong>Object.assign(target, ...sources)</strong>
+    <p>• <u>Parameters Used</u> :<br>
+        <strong>1. target</strong> -- It is the target object to which values and properties have to be copied.<br>
+        <strong>2. sources</strong> -- It is the source object from which values and properties have to be copied.
+    </p><br>
+
+    <!-- EXAMPLE 1 -->
+    <p>•<strong> EXAMPLE 1 -- </strong>
+        <br> // creating an object constructor and assigning values to it
+        <br> const obj1 = { a:1 };
+        <br>
+        <br> // creating a target object and copying values and properties to it using object.assign() method
+        <br> // Here, obj1 is the source object
+        <br> const new_obj = Object.assign({}, obj1);
+        <br>
+        <br> // Displaying the target object
+        <br> console.log(new_obj);
+        <br>
+        <br> // OUTPUT
+        <br> Object { a:1 }
+    </p>
+    <hr>
+
     <script src="doubts.js"></script>
 </body>
 
