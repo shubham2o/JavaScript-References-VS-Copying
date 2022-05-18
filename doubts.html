@@ -43,6 +43,45 @@
         <br> // OUTPUT
         <br> Object { a:1 }
     </p>
+    <br>
+
+    <!-- EXAMPLE 2 -->
+    <p>•<strong> EXAMPLE 2 -- </strong>
+        <br> // creating 3 object constructors and assigning values to them
+        <br> var obj1 = { a:10 };
+        <br> var obj2 = { a:20 };
+        <br> var obj3 = { a:30 };
+        <br>
+        <br> // creating a target object and copying values and properties to them using object.assign() method
+        <br> var new_obj = Object.assign({}, obj1, obj2, obj3);
+        <br>
+        <br> // Displaying the target object
+        <br> console.log(new_obj);
+        <br>
+        <br> // OUTPUT
+        <br> Object { a:10, b:20, c:30 }
+    </p>
+    <br>
+
+    <!-- EXAMPLE 3 -->
+    <p>•<strong> EXAMPLE 3 -- </strong>
+        <br> // creating 3 object constructors and assigning values to them
+        <br> var obj1 = { a:10, b:10, c:10 };
+        <br> var obj2 = { b:20, c:20 };
+        <br> var obj3 = { c:30 };
+        <br>
+        <br> // creating a target object and copying values and properties to them using object.assign() method
+        <br> var new_obj = Object.assign({}, obj1, obj2, obj3);
+        <br>
+        <br> // Displaying the target object
+        <br> console.log(new_obj);
+        <br>
+        <br> // OUTPUT
+        <br> Object { a:10, b:20, c:30 }
+        <br>
+        <br> -- In the above code the properties are overwritten by other objects that have the same properties later in
+        the same order of parameters.
+    </p>
     <hr>
 
     <script src="doubts.js"></script>
